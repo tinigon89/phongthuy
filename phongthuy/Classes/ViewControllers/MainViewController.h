@@ -12,6 +12,8 @@
 {
     UIViewController *viewController;
 }
+
+@property(weak, nonatomic) IBOutlet UINavigationItem *navBar;
 - (IBAction)menu_Click:(id)sender;
 
 @end

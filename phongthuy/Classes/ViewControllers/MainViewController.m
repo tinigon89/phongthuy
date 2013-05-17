@@ -15,7 +15,7 @@
 @end
 
 @implementation MainViewController
-
+@synthesize navBar;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,6 +29,8 @@
 {
     [super viewDidLoad];
     viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuView"];
+   [self.navBar setTitle:@"Phong thủy"];
+    
     self.navigationItem.revealSidebarDelegate = self;
 	// Do any additional setup after loading the view.
 }
@@ -40,7 +42,7 @@
 - (void)menuButtonPressed:(id)sender
 {
     
-   }
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -64,4 +66,8 @@
     return viewController.view;
 }
 
+- (void)viewDidUnload {
+    [super viewDidUnload];
+}
+    
 @end

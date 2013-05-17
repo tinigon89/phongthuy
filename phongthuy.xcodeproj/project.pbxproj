@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5658C64A174677AA00CB341A /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5658C649174677AA00CB341A /* MenuViewController.m */; };
+		5658C64C174680E500CB341A /* btn_LogoutFacebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 5658C64B174680E500CB341A /* btn_LogoutFacebook.png */; };
+		5658C64E17468BB300CB341A /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5658C64D17468BB300CB341A /* arrow.png */; };
+		5658C65017468D4F00CB341A /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5658C64F17468D4F00CB341A /* coin.png */; };
+		5658C6531746A05600CB341A /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5658C6521746A05600CB341A /* avatar.png */; };
+		5658C6571746AC5C00CB341A /* btn_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5658C6561746AC5C00CB341A /* btn_home.png */; };
 		AA05160417463CBD00263E68 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA05160317463CBD00263E68 /* CoreData.framework */; };
 		AA05160617463CC100263E68 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA05160517463CC100263E68 /* QuartzCore.framework */; };
 		AA05160917463CF600263E68 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA05160817463CF600263E68 /* MainViewController.m */; };
@@ -55,6 +61,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5658C648174677AA00CB341A /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		5658C649174677AA00CB341A /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		5658C64B174680E500CB341A /* btn_LogoutFacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_LogoutFacebook.png; sourceTree = "<group>"; };
+		5658C64D17468BB300CB341A /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		5658C64F17468D4F00CB341A /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin.png; sourceTree = "<group>"; };
+		5658C6521746A05600CB341A /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		5658C6551746A4F200CB341A /* UVNTinTuc_B.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = UVNTinTuc_B.TTF; sourceTree = "<group>"; };
+		5658C6561746AC5C00CB341A /* btn_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_home.png; sourceTree = "<group>"; };
 		AA05160317463CBD00263E68 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AA05160517463CC100263E68 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AA05160717463CF600263E68 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -160,6 +174,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5658C6511746A01800CB341A /* Assets_Test */ = {
+			isa = PBXGroup;
+			children = (
+				5658C6521746A05600CB341A /* avatar.png */,
+			);
+			path = Assets_Test;
+			sourceTree = "<group>";
+		};
+		5658C6541746A4C800CB341A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				5658C6551746A4F200CB341A /* UVNTinTuc_B.TTF */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		AA05161A1746413D00263E68 /* UX */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +284,8 @@
 			children = (
 				AA05160717463CF600263E68 /* MainViewController.h */,
 				AA05160817463CF600263E68 /* MainViewController.m */,
+				5658C648174677AA00CB341A /* MenuViewController.h */,
+				5658C649174677AA00CB341A /* MenuViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -268,6 +300,8 @@
 		AADFBED317463BCA00E713C6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5658C6541746A4C800CB341A /* Font */,
+				5658C6511746A01800CB341A /* Assets_Test */,
 				AADFBED417463BCA00E713C6 /* Assets */,
 				AADFBED817463BCA00E713C6 /* Database */,
 				AADFBEE317463BCA00E713C6 /* Library */,
@@ -281,8 +315,12 @@
 			isa = PBXGroup;
 			children = (
 				AADFBED517463BCA00E713C6 /* Default-568h@2x.png */,
+				5658C64D17468BB300CB341A /* arrow.png */,
+				5658C6561746AC5C00CB341A /* btn_home.png */,
+				5658C64F17468D4F00CB341A /* coin.png */,
 				AADFBED617463BCA00E713C6 /* Default.png */,
 				AADFBED717463BCA00E713C6 /* Default@2x.png */,
+				5658C64B174680E500CB341A /* btn_LogoutFacebook.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -459,6 +497,11 @@
 				AADFBF1B17463BCA00E713C6 /* Default.png in Resources */,
 				AADFBF1C17463BCA00E713C6 /* Default@2x.png in Resources */,
 				AADFBF3417463BCA00E713C6 /* SVProgressHUD.bundle in Resources */,
+				5658C64C174680E500CB341A /* btn_LogoutFacebook.png in Resources */,
+				5658C64E17468BB300CB341A /* arrow.png in Resources */,
+				5658C65017468D4F00CB341A /* coin.png in Resources */,
+				5658C6531746A05600CB341A /* avatar.png in Resources */,
+				5658C6571746AC5C00CB341A /* btn_home.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +540,7 @@
 				AA05160F17463D6E00263E68 /* CGItem+Custom.m in Sources */,
 				AA0516211746440300263E68 /* UINavigationItem+JTRevealSidebarV2.m in Sources */,
 				AA0516221746440300263E68 /* UIViewController+JTRevealSidebarV2.m in Sources */,
+				5658C64A174677AA00CB341A /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,11 +637,13 @@
 		AADFBECC17463B0400E713C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "phongthuy/phongthuy-Prefix.pch";
 				INFOPLIST_FILE = "phongthuy/phongthuy-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
