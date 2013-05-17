@@ -16,6 +16,8 @@
 		AA05161517463E0600263E68 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA05161417463E0600263E68 /* libz.dylib */; };
 		AA05161717463E2600263E68 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA05161617463E2600263E68 /* AddressBook.framework */; };
 		AA05161917463ED600263E68 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA05161817463ED600263E68 /* SystemConfiguration.framework */; };
+		AA0516211746440300263E68 /* UINavigationItem+JTRevealSidebarV2.m in Sources */ = {isa = PBXBuildFile; fileRef = AA05161E1746440300263E68 /* UINavigationItem+JTRevealSidebarV2.m */; };
+		AA0516221746440300263E68 /* UIViewController+JTRevealSidebarV2.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0516201746440300263E68 /* UIViewController+JTRevealSidebarV2.m */; };
 		AADFBEA917463B0400E713C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADFBEA817463B0400E713C6 /* UIKit.framework */; };
 		AADFBEAB17463B0400E713C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADFBEAA17463B0400E713C6 /* Foundation.framework */; };
 		AADFBEAD17463B0400E713C6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AADFBEAC17463B0400E713C6 /* CoreGraphics.framework */; };
@@ -64,6 +66,11 @@
 		AA05161417463E0600263E68 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		AA05161617463E2600263E68 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		AA05161817463ED600263E68 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AA05161C1746440300263E68 /* JTRevealSidebarV2Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTRevealSidebarV2Delegate.h; sourceTree = "<group>"; };
+		AA05161D1746440300263E68 /* UINavigationItem+JTRevealSidebarV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+JTRevealSidebarV2.h"; sourceTree = "<group>"; };
+		AA05161E1746440300263E68 /* UINavigationItem+JTRevealSidebarV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+JTRevealSidebarV2.m"; sourceTree = "<group>"; };
+		AA05161F1746440300263E68 /* UIViewController+JTRevealSidebarV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JTRevealSidebarV2.h"; sourceTree = "<group>"; };
+		AA0516201746440300263E68 /* UIViewController+JTRevealSidebarV2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JTRevealSidebarV2.m"; sourceTree = "<group>"; };
 		AADFBEA517463B0400E713C6 /* phongthuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phongthuy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADFBEA817463B0400E713C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AADFBEAA17463B0400E713C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -153,6 +160,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA05161A1746413D00263E68 /* UX */ = {
+			isa = PBXGroup;
+			children = (
+				AADFBEC017463B0400E713C6 /* MainStoryboard_iPhone.storyboard */,
+				AADFBEC317463B0400E713C6 /* MainStoryboard_iPad.storyboard */,
+			);
+			name = UX;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AA05161B1746440300263E68 /* JTRevealSidebarV2 */ = {
+			isa = PBXGroup;
+			children = (
+				AA05161C1746440300263E68 /* JTRevealSidebarV2Delegate.h */,
+				AA05161D1746440300263E68 /* UINavigationItem+JTRevealSidebarV2.h */,
+				AA05161E1746440300263E68 /* UINavigationItem+JTRevealSidebarV2.m */,
+				AA05161F1746440300263E68 /* UIViewController+JTRevealSidebarV2.h */,
+				AA0516201746440300263E68 /* UIViewController+JTRevealSidebarV2.m */,
+			);
+			path = JTRevealSidebarV2;
+			sourceTree = "<group>";
+		};
 		AADFBE9C17463B0400E713C6 = {
 			isa = PBXGroup;
 			children = (
@@ -192,8 +221,7 @@
 			children = (
 				AADFBED317463BCA00E713C6 /* Common */,
 				AADFBECE17463BCA00E713C6 /* Classes */,
-				AADFBEC017463B0400E713C6 /* MainStoryboard_iPhone.storyboard */,
-				AADFBEC317463B0400E713C6 /* MainStoryboard_iPad.storyboard */,
+				AA05161A1746413D00263E68 /* UX */,
 				AADFBEAF17463B0400E713C6 /* Supporting Files */,
 			);
 			path = phongthuy;
@@ -215,8 +243,8 @@
 			children = (
 				AADFBECF17463BCA00E713C6 /* AppDelegate.h */,
 				AADFBED017463BCA00E713C6 /* AppDelegate.m */,
-				AADFBED117463BCA00E713C6 /* ViewControllers */,
 				AADFBED217463BCA00E713C6 /* Views */,
+				AADFBED117463BCA00E713C6 /* ViewControllers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -275,6 +303,7 @@
 		AADFBEE317463BCA00E713C6 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				AA05161B1746440300263E68 /* JTRevealSidebarV2 */,
 				AADFBEE417463BCA00E713C6 /* ASIHTTPRequest */,
 				AADFBEF917463BCA00E713C6 /* JSON */,
 				AADFBF0517463BCA00E713C6 /* Reachability */,
@@ -466,6 +495,8 @@
 				AADFBF3617463BCA00E713C6 /* Util.m in Sources */,
 				AA05160917463CF600263E68 /* MainViewController.m in Sources */,
 				AA05160F17463D6E00263E68 /* CGItem+Custom.m in Sources */,
+				AA0516211746440300263E68 /* UINavigationItem+JTRevealSidebarV2.m in Sources */,
+				AA0516221746440300263E68 /* UIViewController+JTRevealSidebarV2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +517,7 @@
 				AADFBEC117463B0400E713C6 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		AADFBEC317463B0400E713C6 /* MainStoryboard_iPad.storyboard */ = {
@@ -494,6 +526,7 @@
 				AADFBEC417463B0400E713C6 /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

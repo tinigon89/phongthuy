@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MainViewController : UIViewController
+#import "JTRevealSidebarV2Delegate.h"
+@interface MainViewController : UIViewController<JTRevealSidebarV2Delegate>
+{
+    UIViewController *viewController;
+}
+- (IBAction)menu_Click:(id)sender;
 
 @end
