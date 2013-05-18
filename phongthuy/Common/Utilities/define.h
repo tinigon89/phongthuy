@@ -8,12 +8,9 @@
 #import "Util.h"
 #import "NetworkActivityIndicator.h"
 
-#define kServer_Post_UserInfo @"http://server.teamios.info/apis/user_info"
-
-#define kServer_Get_SpecialList @"http://server.teamios.info/apis/speciallist"
-#define kServer_Get_DealList @"http://server.teamios.info/apis/deallist"
-#define kServer_ImageURL @"http://server.teamios.info/img/"
-
+#define kServerRoot                     @"http://sandbox.tuvi.me/"
+#define kListPhongThuyCategories        @"/phongthuy.asmx/getListPhongThuyCategories"
+#define kListPhongThuyFunctions         @"/phongthuy.asmx/getListPhongThuyFunctions"
 #define mainAppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 
 #define IMAGESPATH [NSHomeDirectory() stringByAppendingString:@"/Documents/"]
@@ -36,14 +33,5 @@
 #define PORTRAIT_KEYBOARD_HEIGHT 216
 #define LANDSCAPE_KEYBOARD_HEIGHT  162
 #endif
-#define kUserInfo @"UserInfo"
-#define kFirstLaunch @"FirstLaunch"
-#define kDeviceId @"DeviceId"
 
-#define kUser_Id @"id"
-#define kUser_Name @"name"
-#define kUser_Email @"email"
-#define kUser_Age @"age"
-#define kUser_Sex @"sex"
-#define kUser_Postcode @"postcode"
 
