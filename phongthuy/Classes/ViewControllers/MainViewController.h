@@ -20,8 +20,10 @@
     __weak IBOutlet UIScrollView *ScrollViewFunction;
     __weak IBOutlet UIPageControl *pageControl;
     BOOL pageControlUsed;
+    IBOutlet UISwipeGestureRecognizer *swipeGesture;
 }
 
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionViewCategory;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (weak, nonatomic) IBOutlet UIScrollView *ScrollViewFunction;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionViewFunction;
